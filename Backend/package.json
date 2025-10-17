@@ -1,0 +1,20 @@
+{
+  "name": "fish-supplychain-backed",
+  "version": "1.0.0",
+  "description": "fish supplychain application to make the user benifits",
+  "keywords": [
+    "fish-supplychain",
+    "ganache"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "Demo"
+  },
+  "license": "ISC",
+  "author": "Ujwala",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  }
+}
