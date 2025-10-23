@@ -8,7 +8,10 @@ const fishRoutes = require('./routes/fishRoutes');
 const qrRoutes = require('./routes/qrRoutes');
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: 'http://localhost:3000', // Your React frontend URL
+  credentials: true
+}));
 app.use(express.json()); // body parser
 
 // connect db

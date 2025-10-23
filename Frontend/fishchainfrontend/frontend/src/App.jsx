@@ -9,9 +9,12 @@ import ConsumerView from "./components/ConsumerView";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import TraceFish from "./pages/TraceFish";
+import { AppProvider } from './context/AppContext';
 
 const App = () => {
   return (
+      <AppProvider>
+
     <Router>
       <Navbar />
       <Routes>
@@ -24,6 +27,7 @@ const App = () => {
         <Route path="/trace" element={<TraceFish />} />
       </Routes>
     </Router>
+      </AppProvider>
   );
 };
 
